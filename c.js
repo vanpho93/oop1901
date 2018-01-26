@@ -1,10 +1,20 @@
-function Person(ten, tuoi) {
-    this.name = ten;
-    this.age = tuoi;
-    this.sayHello = function() { console.log('Hello, I am ' + this.name); }
-}
+// function Person(ten, tuoi) {
+//     this.name = ten;
+//     this.age = tuoi;
+//     this.sayHello = function() { console.log('Hello, I am ' + this.name); }
+// }
 
-const teo = new Person('Teo Nguyen', 10);
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    sayHello() {
+        console.log('Hello, I am ' + this.name);
+    }
+}
+const teo = new Person('Teo Nguyen', 30);
 const ti = new Person('Ti Nguyen', 11);
 const tun = new Person('Tun Nguyen', 11);
 
